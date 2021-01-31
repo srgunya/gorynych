@@ -1,0 +1,54 @@
+
+header{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	.logo{
+	svg{
+	margin-left:  width(40px);
+	margin-top:  width(20px);
+	width: width(170px);
+	height: width(31px);
+	}
+}
+nav{
+	display: inline-block;
+	margin-top:  width(20px);
+	ul{
+		li{
+			color: #fff;
+			font-weight: 500;
+			display: inline-block;
+			margin-right: width(35px);
+			cursor: pointer;
+			&:after{
+				display: block;
+				width: 0;
+				content: "";
+				height: width(1.5px)!important;
+				background: #ac2e35;
+				transition: .3s;
+			}
+			&:hover:after{
+				animation: borbot .3s ease;
+				width: 100%;
+			}
+		
+		}
+		&:last-child{
+			margin-right: width(5px);
+		}
+	}
+	
+}
+}
+
+@keyframes borbot{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}

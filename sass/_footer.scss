@@ -1,0 +1,46 @@
+footer{
+	overflow: visible;
+	width: 95%;
+	position: absolute;
+	color: #fff;
+	bottom: width(20px);
+	padding-left: width(40px);
+	padding-right: width(40px);
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	.fa{
+		transition: .3s;
+		cursor: pointer;
+	}
+	.fa:hover{
+		opacity: .5;
+	}
+	.fa-facebook{
+		font-size: width(25px);
+		margin-left: width(890px);
+	}
+	.fa-instagram{
+		font-size: width(25px);
+	}
+	.fa-angle-right{
+		font-size: width(25px);
+		margin-left: width(25px);
+	}
+	span{
+		cursor: pointer;
+		&:after{
+				display: block;
+				width: 0;
+				content: "";
+				height: width(1.5px)!important;
+				background: #ac2e35;
+				transition: .3s;
+			}
+			&:hover:after{
+				animation: borbot .3s ease;
+				width: 100%;
+			}
+	}
+}

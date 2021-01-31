@@ -1,0 +1,70 @@
+
+.reservation{
+	position: absolute;
+	top: 0;
+	width: width(600px);
+	form{
+		margin-top: width(60px);
+	}
+		h3{
+			font-weight: 100;
+			font-size: width(14px);
+			padding-left: width(1px);
+		}
+		input{
+			border: 0;
+			outline: none;
+			background: none;
+			color: #fff;
+			padding-left: width(5px);
+			padding-right:width(5px); 
+			border-bottom: width(2px) solid #ac2e35;
+			font-size: width(14px);
+			margin-bottom: width(20px);
+			
+		}
+			.numb{ 
+  				-moz-appearance: textfield;
+			}
+			.numb::-webkit-inner-spin-button { 
+ 				 display: none;
+			}
+		.tel{
+			position: absolute;
+			top: width(58px+59px);
+			left: width(200px);
+		}
+	.telh{
+		position: absolute;
+		left: width(200px);
+		top: width(39px+60px);
+	}
+	.date{
+		position: absolute;
+		left: width(200px);
+		top: width(116px+59px);
+	}
+	.dateh{
+		position: absolute;
+		left: width(200px);
+		top: width(95px+60px);
+	}
+	.mail{
+		width: width(354px);
+	}
+	.comment{
+		width: width(354px);
+	}
+	.sub{
+		overflow: inherit!important;
+		margin-left: width(245px);
+		border: width(2px) solid #ac2e35;
+		border-radius: width(22px);
+		width: width(119px);
+		height: width(44px);
+		cursor: pointer;
+		&:hover{
+			background: #ac2e35;
+		}
+	}
+	}

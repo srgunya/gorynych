@@ -1,0 +1,78 @@
+.owl-carousel{
+	position: absolute!important;
+	top: width(160px);
+	left: width(1030px);
+	z-index: 100!important;
+	div{
+		img{
+			width: width(456px)!important;
+			height: width(456px)!important;
+		}
+	}
+	.owl-prev{
+		border: 0;
+		outline: none;
+		position: absolute;
+        background-image: url("../img/slider/strelka.svg")!important;
+        background-size: cover!important;
+		transform: rotate(180deg);
+        width: width(30px);
+        height: width(30px);
+		top: width(200px);
+		left: width(15px);
+		transition: .1s;
+		&:hover{
+			transform: rotate(180deg) scale(1.1);
+		}
+        }
+        .owl-next{
+		border: 0;
+		outline: none;
+		position: absolute;
+        background-image: url("../img/slider/strelka.svg")!important;
+        background-size: cover!important;
+        width: width(30px);
+        height: width(30px);
+		top: width(200px);
+		right: width(15px);
+		&:hover{
+			transform: scale(1.1);
+		}
+        }
+}
+	.logo2{
+	height: width(520px);
+	position: absolute;
+	left: width(1130px);
+	top: width(130px);
+	z-index: 1;
+	transition: 1s;
+}
+.button{
+	color: #fff;
+	width: width(155px);
+	position: absolute;
+	right: width(335px);
+	top: width(660px);
+	overflow: visible;
+	cursor: pointer;
+	&:after{
+				display: block;
+				width: 0;
+				content: "";
+				height: width(1.5px)!important;
+				background: #ac2e35;
+				transition: .3s;
+			}
+			&:hover:after{
+				animation: borbot .3s ease;
+				width: 100%;
+			}
+	i{
+		font-size: width(25px);
+		position: relative;
+		left: width(8px);
+		top: width(7px);
+		opacity: 0;
+	}
+}
