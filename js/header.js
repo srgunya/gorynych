@@ -100,16 +100,21 @@ logo.onclick = function(){
 	}
 }
 
-cont_but2.onclick = function(){
-	setTimeout('reservation.classList.remove("display0")', 1000);
-	setTimeout('contact.classList.add("display0")', 1000);
+if(document.documentElement.clientWidth > document.documentElement.clientHeight){
+	cont_but2.onclick = function(){
+	console.log(cur);
 	info.style.zIndex = "10";
-	reservation.style.zIndex = "100";
+	info.classList.remove('active');
 	info.classList.remove('dvizh4');
 	info.classList.add('dvizh3');
+	reservation.classList.add('active');
+	reservation.style.zIndex = "100";
 	setTimeout('reservation.classList.add("dvizh4")', 1000);
-	cur =2;
+	cur = 2;
+	
 }
+}
+
 
 header[0].onclick = function(){
 	wrapCont.classList.add('dvizh1');

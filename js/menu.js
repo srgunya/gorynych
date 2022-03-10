@@ -120,8 +120,8 @@ butmenu[2].onclick = function(){
 		cur1 = 2;
 	}
 }
-cont_but2.onclick = function(){
-	
+ if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
+	 	 cont_but2.onclick = function(){
 		contact.style.zIndex = "10";
 		info.style.zIndex = "10";
 		reservation.style.zIndex = "100000";
@@ -130,6 +130,8 @@ cont_but2.onclick = function(){
 		setTimeout("reservation.classList.add('opacity1')", 1500);
 		cur1 = 2;
 }
+ }
+
 
 butmenu[3].onclick = function(){
 	burg.click();
