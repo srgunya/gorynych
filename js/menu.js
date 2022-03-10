@@ -32,7 +32,8 @@ butmenu[0].onclick = function(){
 		slider.classList.add('dvizh2');
 		info.classList.add('opacity0');
 		info.classList.remove('opacity1');
-		
+		setTimeout("slider.style.left ='4.6052631579vw'", 1000);
+		setTimeout("logo2.style.left ='49.3421052632vw'", 1000);
 		shadow.classList.remove('display0');
 		shadow.classList.remove('opacity0');
 		shadow.classList.add('opacity2');
@@ -46,6 +47,8 @@ butmenu[0].onclick = function(){
 		reservation.classList.remove('opacity1');
 		logo2.classList.add('dvizh1');
 		slider.classList.add('dvizh2');
+		setTimeout("slider.style.left ='4.6052631579vw'", 1000);
+		setTimeout("logo2.style.left ='49.3421052632vw'", 1000);
 		shadow.classList.remove('display0');
 		shadow.classList.remove('opacity0');
 		shadow.classList.add('opacity2');
@@ -59,6 +62,8 @@ butmenu[0].onclick = function(){
 		contact.classList.remove('opacity1');
 		logo2.classList.add('dvizh1');
 		slider.classList.add('dvizh2');
+		setTimeout("slider.style.left ='4.6052631579vw'", 1000);
+		setTimeout("logo2.style.left ='49.3421052632vw'", 1000);
 		shadow.classList.remove('display0');
 		shadow.classList.remove('opacity0');
 		shadow.classList.add('opacity2');
