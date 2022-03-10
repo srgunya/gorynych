@@ -1,4 +1,5 @@
-.opacity0{
+@media screen and (min-width: 1023px){
+	.opacity0{
 	animation: opa0 2s ease;
 	opacity: 0;
 }
@@ -112,4 +113,6 @@
 	100%{
 		left: 0;
 	}
+}
+
 }

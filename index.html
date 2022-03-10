@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Ресторан Горыныч</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="owl.carousel/dist/assets/owl.carousel.min.css" />
 	<script src="https://use.fontawesome.com/66008579d7.js"></script>
 	<link rel="stylesheet" href="./css/jquery.datetimepicker.min.css">
+	<link rel="icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
 <div class="shadow"></div>
 <div class="wrap">
-	<header><a href="#" class="logo"><svg width="170px" height="31px" viewBox="0 0 170 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<header>
+                           <a href="#" class="logo"><svg width="170px" height="31px" viewBox="0 0 170 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Group 17</title>
                             <desc>Created with Sketch.</desc>
                             <defs>
@@ -40,22 +44,28 @@
                                     </g>
                                 </g>
                             </g>
-                        </svg></a>
+                        </svg>
+                        </a>
      <nav><ul>
      	<li>Галерея</li>
      	<a href="./gorynichmenu_ru.pdf"><li>Меню</li></a>
      	<li>Бронирование</li>
+     	<li>Контакты</li>
      	<a href="https://app.wrf.su/"><li>Приложение</li></a>
-     	<a href="./eng.html"><li>EN</li></a>
-     </ul></nav></header>
+     	<a href="./eng.html" class="eng"><li>EN</li></a>
+     </ul>
+     <button class="c-hamburger c-hamburger--htx display0 onespan">
+  <span>toggle menu</span>
+</button>
+      </nav></header>
      <div class="wrap_cont">
      	<div class="cont">
-     	<div class="info active">
+     	<div class="info">
      		<h1>Ресторан Горыныч</h1>
 			<p>Гриль, пекарня, бар<br />
 			Кухня открытого огня от Бориса Зарькова, Ильи Тютенкова и Владимира Мухина.<br />
 			Печи, хосперы, смокеры – «Горыныч» печет и жарит всеми имеющимися способами. В<br /> ресторане можно попробовать крафтовый хлеб из собственной пекарни, неаполитанскую<br /> пиццу, стейки собственного вызревания. И полюбоваться видом на старые московские<br /> бульвары из больших панорамных окон.</p>
-			<a href="https://delivery.gorynich.com/#rec195175178"><h2 class="cont_but1">Доставка</h2></a><br />
+			<a href="https://delivery.gorynich.com/#rec195175178" ><h2 class="cont_but1">Доставка</h2></a><br />
 			<h2 class="cont_but2">Забронировать</h2>
      	</div>
 		<div class="reservation opacity0">
@@ -70,25 +80,42 @@
 				<input type="submit" value="Готово" class="sub">
 			</form>
 </div>
+<div class="contact opacity0">
+	<h1>Контакты</h1>
+	<p>
+		Время работы:<br />
+		Воскресенье - Среда 8:00-24:00<br />
+		Четверг - Суббота 8:00-02:00<br />
+		31.12.21 8:00-20:00<br />
+		01.01.22 12:00-00:00<br />
+		г. Москва, Рождественский бульвар, 1<br />
+		info@gorynich.com<br />
+		Ресторан: +7 495 937-38-11
+	</p>
+	<h1 class="parking">Valet Parking</h1>
+	<p>Понедельник-суббота: с 12:00 до последнего гостя<br />
+		Парковка вашего авто : +7 915 727-54-64
+	</p>
+</div>
 </div>
 
 <div class="shadow2"></div>
-<img src="img/gorynich.png" alt="" class="logo2">
-<div class="owl-carousel owl-theme">
-  <div><img src="./img/slider/new/1.jpg" alt=""></div>
-  <div><img src="./img/slider/new/2.jpg" alt=""></div>
-  <div><img src="./img/slider/new/3.jpg" alt=""></div>
-  <div><img src="./img/slider/new/4.jpg" alt=""></div>
-  <div><img src="./img/slider/new/5.jpg" alt=""></div>
-  <div><img src="./img/slider/new/6.jpg" alt=""></div>
-  <div><img src="./img/slider/new/7.jpg" alt=""></div>
-  <div><img src="./img/slider/new/8.jpg" alt=""></div>
-  <div><img src="./img/slider/new/9.jpg" alt=""></div>
-  <div><img src="./img/slider/new/10.jpg" alt=""></div>
-  <div><img src="./img/slider/new/11.jpg" alt=""></div>
-  <div><img src="./img/slider/new/12.jpg" alt=""></div>
-  <div><img src="./img/slider/new/13.jpg" alt=""></div>
-  <div><img src="./img/slider/new/14.jpg" alt=""></div>
+<img src="img/gorynich.png" class="logo2" alt="">
+<div class="owl-carousel">
+  <div><img src="img/slider/new/1.jpg" alt=""></div>
+  <div><img src="img/slider/new/2.jpg" alt=""></div>
+  <div><img src="img/slider/new/3.jpg" alt=""></div>
+  <div><img src="img/slider/new/4.jpg" alt=""></div>
+  <div><img src="img/slider/new/5.jpg" alt=""></div>
+  <div><img src="img/slider/new/6.jpg" alt=""></div>
+  <div><img src="img/slider/new/7.jpg" alt=""></div>
+  <div><img src="img/slider/new/8.jpg" alt=""></div>
+  <div><img src="img/slider/new/9.jpg" alt=""></div>
+  <div><img src="img/slider/new/10.jpg" alt=""></div>
+  <div><img src="img/slider/new/11.jpg" alt=""></div>
+  <div><img src="img/slider/new/12.jpg" alt=""></div>
+  <div><img src="img/slider/new/13.jpg" alt=""></div>
+  <div><img src="img/slider/new/14.jpg" alt=""></div>
 </div>
 <div class="button">
 	<span>Открыть Галерею</span>
@@ -98,12 +125,22 @@
 
 <footer>
 	<a href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%80%D1%8B%D0%BD%D1%8B%D1%87/@55.7667786,37.6221033,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a6838f030d3:0x9606359d71b90c94!8m2!3d55.7668135!4d37.6239668"><i class="fa fa-map-o" aria-hidden="true"></i></a>
-	<a href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%80%D1%8B%D0%BD%D1%8B%D1%87/@55.7667786,37.6221033,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a6838f030d3:0x9606359d71b90c94!8m2!3d55.7668135!4d37.6239668"><span>г. Москва, Рождественский бульвар. 1</span></a>
+	<a href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%80%D1%8B%D0%BD%D1%8B%D1%87/@55.7667786,37.6221033,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a6838f030d3:0x9606359d71b90c94!8m2!3d55.7668135!4d37.6239668" class="qwe"><span>г. Москва, Рождественский бульвар. 1</span></a>
 	<a href="tel:+74959373811"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-	<a href="tel:+74959373811"><span>+7 495 9373811</span></a>
+	<a href="tel:+74959373811" class="qwe1"><span>+7 495 9373811</span></a>
 	<a href="https://www.facebook.com/Gorynichmoscow/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 	<a href="https://www.instagram.com/gorynich.moscow/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 </footer>
+</div>
+<div class="menu">
+	<ul>
+		<li>Галерея</li>
+		<a href="./gorynichmenu_ru.pdf"><li>Меню</li></a>
+		<li>Бронирование</li>
+		<li>Контакты</li>
+		<a href="https://app.wrf.su/"><li>Приложение</li></a>
+		<a href="./index.html" class="eng"><li>EN</li></a>
+	</ul>
 </div>
 
 
@@ -123,10 +160,14 @@
 <script src="js/slider.js"></script>
 <script src="js/jquery.datetimepicker.full.js"></script>
 <script src="js/header.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/mini.js"></script>
+<script src="js/burger.js"></script>
 
 
 <script>
-$('.date').datetimepicker({
+	if(document.documentElement.clientWidth > document.documentElement.clientHeight){
+		$('.date').datetimepicker({
                 format:'d.m.Y H:i',
                 allowTimes:[
                     '12:00','12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30',  '16:00',  '16:30',    
@@ -134,12 +175,22 @@ $('.date').datetimepicker({
                 ]
                 //step: 30
             });
+	} else if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
+		$('.date').datetimepicker({
+			datepicker:false,
+ 			timepicker:false,
+ mask:true, // '9999/19/39 29:59' - digit is the maximum possible for a cell
+});
+	}
+
 </script>
 
 
 <script>
-	$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({	           
+	if(document.documentElement.clientWidth > document.documentElement.clientHeight){
+			$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({	
+	  			items:3,
                 loop:false,
                 margin:10,
                 nav:true,
@@ -147,6 +198,19 @@ $('.date').datetimepicker({
                 smartSpeed:1000,
               	});
 });
+	} else if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
+					$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({	
+	  			items:1,
+                loop:false,
+                margin:100,
+                nav:true,
+                navText:[],
+                smartSpeed:1000,
+              	});
+});
+	}
+
 	</script>
 
 

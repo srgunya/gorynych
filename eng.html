@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Restaurant Gorynich</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="owl.carousel/dist/assets/owl.carousel.min.css" />
 	<script src="https://use.fontawesome.com/66008579d7.js"></script>
 	<link rel="stylesheet" href="./css/jquery.datetimepicker.min.css">
+	<link rel="icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
 <div class="shadow"></div>
@@ -45,9 +46,14 @@
      	<li>Gallery</li>
      	<a href="./gorynichmenu_en.pdf"><li>Menu</li></a>
      	<li>Booking</li>
+     	<li>Contacts</li>
      	<a href="https://app.wrf.su/"><li>App</li></a>
-     	<a href="./index.html"><li>RU</li></a>
-     </ul></nav></header>
+     	<a href="./index.html" class="eng"><li>RU</li></a>
+     </ul>
+       <button class="c-hamburger c-hamburger--htx display0 onespan">
+  		<span>toggle menu</span>
+	</button>
+    </nav></header>
      <div class="wrap_cont">
      	<div class="cont">
      	<div class="info">
@@ -71,6 +77,23 @@
 				<h3 class="dateh">Date and time</h3><input type="text" name="date" class="date" id="datetimepicker">
 				<input type="submit" value="Done" class="sub">
 			</form>
+</div>
+<div class="contact opacity0">
+	<h1>Contacts</h1>
+	<p>
+		Open:<br />
+		Sunday - Wednesday 8:00 - 24:00<br />
+		Thursday - Saturday 8:00 -02:00<br />
+		31.12.21 8:00-20:00<br />
+		01.01.22 12:00-00:00<br />
+		Moscow, Rozhdestvensky Boulevard, 1<br />
+		info@gorynich.com<br />
+		Restaurant: +7 495 937 38 11
+	</p>
+	<h1 class="parking">Valet Parking</h1>
+	<p>Monday-Saturday: 12:00 - 02:00<br />
+		For parking your car please call: +7 915 727-54-64
+	</p>
 </div>
 </div>
 
@@ -107,6 +130,16 @@
 	<a href="https://www.instagram.com/gorynich.moscow/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 </footer>
 </div>
+<div class="menu">
+	<ul>
+		<li>Gallery</li>
+		<a href="./gorynichmenu_ru.pdf"><li>Menu</li></a>
+		<li>Booking</li>
+		<li>Contacts</li>
+		<a href="https://app.wrf.su/"><li>App</li></a>
+		<a href="./index.html" class="eng"><li>RU</li></a>
+	</ul>
+</div>
 
 
 
@@ -125,10 +158,14 @@
 <script src="js/slider.js"></script>
 <script src="js/jquery.datetimepicker.full.js"></script>
 <script src="js/header.js"></script>
+<script src="js/mini.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/menu.js"></script>
 
 
 <script>
-$('.date').datetimepicker({
+	if(document.documentElement.clientWidth > document.documentElement.clientHeight){
+		$('.date').datetimepicker({
                 format:'d.m.Y H:i',
                 allowTimes:[
                     '12:00','12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30',  '16:00',  '16:30',    
@@ -136,12 +173,22 @@ $('.date').datetimepicker({
                 ]
                 //step: 30
             });
+	} else if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
+		$('.date').datetimepicker({
+			datepicker:false,
+ 			timepicker:false,
+ mask:true, // '9999/19/39 29:59' - digit is the maximum possible for a cell
+});
+	}
+
 </script>
 
 
 <script>
-	$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({	           
+	if(document.documentElement.clientWidth > document.documentElement.clientHeight){
+			$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({	
+	  			items:3,
                 loop:false,
                 margin:10,
                 nav:true,
@@ -149,6 +196,19 @@ $('.date').datetimepicker({
                 smartSpeed:1000,
               	});
 });
+	} else if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
+					$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({	
+	  			items:1,
+                loop:false,
+                margin:100,
+                nav:true,
+                navText:[],
+                smartSpeed:1000,
+              	});
+});
+	}
+
 	</script>
 
 

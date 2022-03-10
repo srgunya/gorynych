@@ -1,0 +1,117 @@
+@media screen and (max-width: 1023px){
+.c-hamburger {
+	position: absolute!important;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+	right: heihgthmob(14px)!important;
+	top: heihgthmob(14px)!important;
+  padding: 0;
+  width: heihgthmob(48px);
+  height: heihgthmob(48px);
+  font-size: 0;
+  text-indent: heihgthmob(-9999px);
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+	z-index: 10000000!important;
+}
+.c-hamburger:focus {
+  outline: none;
+	z-index: 10000000!important;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: heihgthmob(22px);
+  left: heihgthmob(9px);
+  right: heihgthmob(9px);
+  height: heihgthmob(4px);
+  background: #fff;
+	overflow: visible!important;
+	z-index: 10000000!important;
+}
+	.onespan span::before,
+	.onespan span::after{
+		position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: heihgthmob(4px);
+  background-color: #fff;
+  content: "";
+	z-index: 10000000!important;
+	}
+	.twospan span::before,
+	.twospan span::after{
+		position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: heihgthmob(4px);
+  background-color: black;
+  content: "";
+	z-index: 10000000!important;
+	}
+.c-hamburger span::before {
+  top: heihgthmob(-10px);
+	z-index: 10000000!important;
+}
+.c-hamburger span::after {
+  bottom: heihgthmob(-10px);
+	z-index: 10000000!important;
+}
+
+.c-hamburger--htx {
+  background: transparent;
+	z-index: 10000000!important;
+}
+.c-hamburger--htx span {
+	position: absolute;
+  transition: background 0s 0.3s;
+	overflow: visible!important;
+	z-index: 10000000!important;
+}
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+	z-index: 10000000!important;
+}
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+	z-index: 10000000!important;
+}
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+	z-index: 10000000!important;
+}
+/* состояние active при открытом меню  */
+.c-hamburger--htx.is-active {
+  background: transparent;
+	z-index: 10000000!important;
+}
+.c-hamburger--htx.is-active span {
+  background: none;
+	z-index: 10000000!important;
+}
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+	z-index: 10000000!important;
+}
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+	z-index: 10000000!important;
+}
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+	z-index: 10000000!important;
+}
+}

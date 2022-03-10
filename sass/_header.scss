@@ -5,16 +5,23 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	.logo{
+		z-index: 100;
+		color: black;
 	svg{
 	margin-left:  width(40px);
 	margin-top:  width(20px);
 	width: width(170px);
 	height: width(31px);
+		.eb_logo{
+			fill: #fff;
+			transition: all .5s;
+		}
 	}
 }
 nav{
 	display: inline-block;
 	margin-top:  width(20px);
+	z-index: 10000;
 	ul{
 		li{
 			color: #fff;

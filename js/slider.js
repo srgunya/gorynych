@@ -14,6 +14,6 @@ button.onclick = function(){
 	shadow.classList.remove('opacity0');
 	shadow.classList.add('opacity2');
 	logo2.style.opacity = '.4';
-	cur = 1;
+	cur1 = 1;
 }
 

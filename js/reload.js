@@ -5,7 +5,7 @@ let but2 = document.querySelector('.cont_but2');
 let strelka = document.querySelector('.button .fa');
 
 window.onload=function(){
-	shadow.classList.add('opacity0');
+	shadow.classList.add('opacity00');
 	setTimeout('shadow.classList.add("display0")', 1500);
 	setTimeout('wrap.classList.add("dvizh")', 500);
 	setTimeout('but1.classList.add("opacity1")', 2000);
