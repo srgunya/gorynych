@@ -1,14 +1,12 @@
 @media screen and (max-width: 1023px){
 .c-hamburger {
-	top: heihgthmob(13px);
-	right: heihgthmob(10px);
   display: block;
-  position: absolute!important;
+  position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: heihgthmob(48px);
-  height: heihgthmob(48px);
+  width: 96px;
+  height: 96px;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -22,12 +20,12 @@
   outline: none;
 }
 	.c-hamburger span {
-		width: heihgthmob(30px);
   display: block;
   position: absolute;
-  left: heihgthmob(9px);
+  top: 44px;
+  left: 18px;
   right: 18px;
-  height: heihgthmob(4px);
+  height: 8px;
   background: white;
 }
 .c-hamburger span::before,
@@ -36,22 +34,21 @@
   display: block;
   left: 0;
   width: 100%;
-  height: heihgthmob(4px);
+  height: 8px;
   background-color: #fff;
   content: "";
 }
 .c-hamburger span::before {
-  top: heihgthmob(-10px);
+  top: -20px;
 }
 .c-hamburger span::after {
-  bottom: heihgthmob(-10px);
+  bottom: -20px;
 }
 	.c-hamburger--htx {
-  background-color: transparent;
+  background-color: #ff3264;
 }
 .c-hamburger--htx span {
   transition: background 0s 0.3s;
-	overflow: visible;
 }
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
@@ -66,7 +63,7 @@
 }
 /* состояние active при открытом меню  */
 .c-hamburger--htx.is-active {
-  background-color: transparent;
+  background-color: #cb0032;
 }
 .c-hamburger--htx.is-active span {
   background: none;
@@ -82,6 +79,5 @@
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
-	background: black;
 }
 }
