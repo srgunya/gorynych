@@ -850,7 +850,7 @@ footer {
     left: 0;
     width: 100%;
     height: 0.4464285714vh;
-    background-color: #fff;
+    background-color: red;
     content: "";
     z-index: 1010 !important; }
 
@@ -913,7 +913,7 @@ footer {
     left: 0;
     width: 100%;
     height: 0.4464285714vh;
-    background-color: black;
+    background-color: red;
     content: "";
     z-index: 1010 !important; } }
 
