@@ -414,6 +414,8 @@ footer {
         margin: 0 !important; }
 
   nav {
+    position: absolute;
+    left: 34.5982142857vh;
     margin-top: 0 !important; }
     nav ul {
       margin-right: 0 !important; }
@@ -809,10 +811,9 @@ footer {
       width: 100%; } } }
 @media screen and (max-width: 1023px) {
   .c-hamburger {
-    top: 13px;
-    right: 15px;
+    z-index: 10000;
     display: block;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     margin: 0;
     padding: 0;
