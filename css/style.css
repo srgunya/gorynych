@@ -488,7 +488,7 @@ footer {
     right: 0;
     width: 0;
     height: 100vh !important;
-    background: #fff;
+    background: red;
     z-index: 101; }
     .menu a {
       color: black !important; }
