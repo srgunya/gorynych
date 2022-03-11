@@ -1,6 +1,6 @@
 @media screen and (max-width: 1023px){
 .c-hamburger {
-	position: fixed!important;
+	position: absolute!important;
   display: block;
   overflow: hidden;
   margin: 0;
@@ -56,7 +56,7 @@
 }
 
 .c-hamburger--htx {
-  background: transparent;
+  
 	z-index: 999!important;
 }
 .c-hamburger--htx span {
@@ -81,7 +81,7 @@
 }
 /* состояние active при открытом меню  */
 .c-hamburger--htx.is-active {
-  background: transparent;
+  
 	z-index: 999!important;
 }
 .c-hamburger--htx.is-active span {
