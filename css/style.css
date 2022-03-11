@@ -889,6 +889,7 @@ footer {
 
   .c-hamburger--htx.is-active span::before,
   .c-hamburger--htx.is-active span::after {
-    transition-delay: 0s, 0.3s; } }
+    transition-delay: 0s, 0.3s;
+    background: black; } }
 
 /*# sourceMappingURL=style.css.map */
