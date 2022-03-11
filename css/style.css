@@ -909,7 +909,7 @@ footer {
   .c-hamburger--htx.is-active span::after {
     transition-delay: 0s, 0.3s;
     z-index: 10000000 !important;
-    background-color: red;
+    background-color: black;
     position: absolute;
     display: block;
     left: 0;
