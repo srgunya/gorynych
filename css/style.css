@@ -825,12 +825,10 @@ footer {
     border-radius: none;
     border: none;
     cursor: pointer;
-    transition: background 0.3s;
-    z-index: 999 !important; }
+    transition: background 0.3s; }
 
   .c-hamburger:focus {
-    outline: none;
-    z-index: 999 !important; }
+    outline: none; }
 
   .c-hamburger span {
     display: block;
@@ -840,8 +838,7 @@ footer {
     right: 1.0044642857vh;
     height: 0.4464285714vh;
     background: #fff;
-    overflow: visible !important;
-    z-index: 999 !important; }
+    overflow: visible !important; }
 
   .onespan span::before,
   .onespan span::after {
@@ -851,57 +848,47 @@ footer {
     width: 100%;
     height: 0.4464285714vh;
     background-color: #fff;
-    content: "";
-    z-index: 999 !important; }
+    content: ""; }
 
   .c-hamburger span::before {
-    top: -1.1160714286vh;
-    z-index: 999 !important; }
+    top: -1.1160714286vh; }
 
   .c-hamburger span::after {
-    bottom: -1.1160714286vh;
-    z-index: 999 !important; }
+    bottom: -1.1160714286vh; }
 
   .c-hamburger--htx {
-    z-index: 999 !important; }
+    background: transparent; }
 
   .c-hamburger--htx span {
     position: absolute;
     transition: background 0s 0.3s;
-    overflow: visible !important;
-    z-index: 999 !important; }
+    overflow: visible !important; }
 
   .c-hamburger--htx span::before,
   .c-hamburger--htx span::after {
     transition-duration: 0.3s, 0.3s;
-    transition-delay: 0.3s, 0s;
-    z-index: 999 !important; }
+    transition-delay: 0.3s, 0s; }
 
   .c-hamburger--htx span::before {
-    transition-property: top, transform;
-    z-index: 999 !important; }
+    transition-property: top, transform; }
 
   .c-hamburger--htx span::after {
-    transition-property: bottom, transform;
-    z-index: 999 !important; }
+    transition-property: bottom, transform; }
 
   /* состояние active при открытом меню  */
   .c-hamburger--htx.is-active {
-    z-index: 999 !important; }
+    background: transparent; }
 
   .c-hamburger--htx.is-active span {
-    background: none;
-    z-index: 999 !important; }
+    background: none; }
 
   .c-hamburger--htx.is-active span::before {
     top: 0;
-    transform: rotate(45deg);
-    z-index: 999 !important; }
+    transform: rotate(45deg); }
 
   .c-hamburger--htx.is-active span::after {
     bottom: 0;
-    transform: rotate(-45deg);
-    z-index: 999 !important; }
+    transform: rotate(-45deg); }
 
   .c-hamburger--htx.is-active span::before,
   .c-hamburger--htx.is-active span::after {
@@ -912,7 +899,6 @@ footer {
     width: 100%;
     height: 0.4464285714vh;
     background-color: black;
-    content: "";
-    z-index: 999 !important; } }
+    content: ""; } }
 
 /*# sourceMappingURL=style.css.map */
