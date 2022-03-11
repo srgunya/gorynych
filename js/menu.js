@@ -188,7 +188,6 @@ burg.onclick = function(){
 		for(let i = 0; i < eblogo.length; i++){
 			eblogo[i].style.fill = "black";
 		}
-		burg.classList.add('twospan');
 		burg.classList.remove('onespan');
 		for(let i = 0; i < fa.length; i++){
 			fa[i].style.color = "black";
@@ -201,7 +200,6 @@ burg.onclick = function(){
 		for(let i = 0; i < eblogo.length; i++){
 			eblogo[i].style.fill = "#fff";
 		}
-		burg.classList.remove('twospan');
 		burg.classList.add('onespan');
 		for(let i = 0; i < fa.length; i++){
 			fa[i].style.color = "white";
