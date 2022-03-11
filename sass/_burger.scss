@@ -49,6 +49,7 @@
 }
 .c-hamburger--htx span {
   transition: background 0s 0.3s;
+	overflow: visible;
 }
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
