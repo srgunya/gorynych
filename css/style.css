@@ -602,6 +602,12 @@ footer {
     .contact p {
       line-height: 2.2321428571vh !important; } }
 @media screen and (max-height: 668px) {
+  .c-hamburger span {
+    left: 0.5022321429vh !important; }
+
+  nav {
+    left: 44.6428571429vh; }
+
   .owl-carousel {
     top: 25.6696428571vh; }
 
@@ -619,6 +625,13 @@ footer {
   footer a .fa-angle-right {
     margin-right: 35.7142857143vh !important; } }
 @media screen and (max-width: 281px) {
+  .c-hamburger span {
+    width: 20px !important;
+    left: 1.1160714286vh !important; }
+
+  nav {
+    left: 31.25vh; }
+
   .owl-carousel {
     top: 31.25vh; }
 
@@ -632,6 +645,9 @@ footer {
   footer a .fa-angle-right {
     margin-right: 23.4375vh !important; } }
 @media screen and (min-width: 540px) and (max-width: 819px) {
+  nav {
+    left: 62.5vh; }
+
   .owl-carousel {
     top: 17.8571428571vh; }
     .owl-carousel .owl-nav .owl-next {
@@ -665,6 +681,13 @@ footer {
   footer a .fa-angle-right {
     margin-right: 56.9196428571vh !important; } }
 @media screen and (min-width: 819px) and (max-width: 1023px) {
+  .c-hamburger span {
+    width: 40px !important;
+    left: 1.1160714286vh !important; }
+
+  nav {
+    left: 55.8035714286vh; }
+
   .owl-carousel {
     top: 20.0892857143vh; }
     .owl-carousel .owl-nav .owl-next {
@@ -817,8 +840,8 @@ footer {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 48px;
-    height: 48px;
+    width: 5.3571428571vh;
+    height: 5.3571428571vh;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -835,10 +858,10 @@ footer {
     width: 30px;
     display: block;
     position: absolute;
-    top: 22px;
-    left: 9px;
+    top: 2.4553571429vh;
+    left: 1.0044642857vh;
     right: 18px;
-    height: 4px;
+    height: 0.4464285714vh;
     background: white; }
 
   .c-hamburger span::before,
@@ -847,15 +870,15 @@ footer {
     display: block;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 0.4464285714vh;
     background-color: #fff;
     content: ""; }
 
   .c-hamburger span::before {
-    top: -10px; }
+    top: -1.1160714286vh; }
 
   .c-hamburger span::after {
-    bottom: -10px; }
+    bottom: -1.1160714286vh; }
 
   .c-hamburger--htx {
     background-color: transparent; }
