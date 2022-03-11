@@ -17,11 +17,11 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger:focus {
   outline: none;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 
 .c-hamburger span {
@@ -33,7 +33,7 @@
   height: heihgthmob(4px);
   background: #fff;
 	overflow: visible!important;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 	.onespan span::before,
 	.onespan span::after{
@@ -42,61 +42,61 @@
   left: 0;
   width: 100%;
   height: heihgthmob(4px);
-  background-color: red;
+  background-color: #fff;
   content: "";
-	z-index: 1010!important;
+	z-index: 999!important;
 	}
 .c-hamburger span::before {
   top: heihgthmob(-10px);
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger span::after {
   bottom: heihgthmob(-10px);
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 
 .c-hamburger--htx {
   background: transparent;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx span {
 	position: absolute;
   transition: background 0s 0.3s;
 	overflow: visible!important;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx span::before {
   transition-property: top, transform;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx span::after {
   transition-property: bottom, transform;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 /* состояние active при открытом меню  */
 .c-hamburger--htx.is-active {
   background: transparent;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx.is-active span {
   background: none;
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx.is-active span::before {
   top: 0;
   transform: rotate(45deg);
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg);
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
@@ -106,8 +106,8 @@
   	left: 0;
 	width: 100%;
 	 height: heihgthmob(4px);
-  background-color: red;
+  background-color: black;
   content: "";
-	z-index: 1010!important;
+	z-index: 999!important;
 }
 }
