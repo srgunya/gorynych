@@ -182,6 +182,8 @@ butmenu[3].onclick = function(){
 
 burg.onclick = function(){
 	if(cur2 == 0){
+		menu.classList.add('menudvizh');
+		menu.classList.remove('menudvizh1');
 		engl.classList.add('display0');
 		for(let i = 0; i < eblogo.length; i++){
 			eblogo[i].style.fill = "black";
@@ -193,6 +195,8 @@ burg.onclick = function(){
 		}
 		cur2 = 1;
 	} else {
+		menu.classList.add('menudvizh1');
+		menu.classList.remove('menudvizh');
 		engl.classList.remove('display0');
 		for(let i = 0; i < eblogo.length; i++){
 			eblogo[i].style.fill = "#fff";
