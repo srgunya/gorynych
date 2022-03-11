@@ -46,7 +46,17 @@
   content: "";
 	z-index: 10000000!important;
 	}
-
+	.twospan span::before,
+	.twospan span::after{
+		position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: heihgthmob(4px);
+  background-color: red;
+  content: "";
+	z-index: 10000000!important;
+	}
 .c-hamburger span::before {
   top: heihgthmob(-10px);
 	z-index: 10000000!important;
@@ -102,14 +112,6 @@
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
-	z-index: 10000000!important;
-	background-color: black;
-	position: absolute;
-  	display: block;
-  	left: 0;
-  	width: 100%;
-  	height: heihgthmob(4px);
-  	content: "";
 	z-index: 10000000!important;
 }
 }
