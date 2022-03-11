@@ -809,15 +809,17 @@ footer {
       width: 100%; } } }
 @media screen and (max-width: 1023px) {
   .c-hamburger {
+    position: absolute !important;
     display: block;
-    position: relative;
     overflow: hidden;
     margin: 0;
+    right: 1.5625vh !important;
+    top: 1.5625vh !important;
     padding: 0;
-    width: 96px;
-    height: 96px;
+    width: 5.3571428571vh;
+    height: 5.3571428571vh;
     font-size: 0;
-    text-indent: -9999px;
+    text-indent: -1115.9598214286vh;
     appearance: none;
     box-shadow: none;
     border-radius: none;
@@ -831,11 +833,11 @@ footer {
   .c-hamburger span {
     display: block;
     position: absolute;
-    top: 44px;
-    left: 18px;
-    right: 18px;
-    height: 8px;
-    background: white; }
+    top: 2.4553571429vh;
+    left: 1.0044642857vh;
+    right: 1.0044642857vh;
+    height: 0.4464285714vh;
+    background: #fff; }
 
   .c-hamburger span::before,
   .c-hamburger span::after {
@@ -843,21 +845,22 @@ footer {
     display: block;
     left: 0;
     width: 100%;
-    height: 8px;
+    height: 0.4464285714vh;
     background-color: #fff;
     content: ""; }
 
   .c-hamburger span::before {
-    top: -20px; }
+    top: -1.1160714286vh; }
 
   .c-hamburger span::after {
-    bottom: -20px; }
+    bottom: -1.1160714286vh; }
 
   .c-hamburger--htx {
-    background-color: #ff3264; }
+    background: transparent; }
 
   .c-hamburger--htx span {
-    transition: background 0s 0.3s; }
+    transition: background 0s 0.3s;
+    overflow: visible; }
 
   .c-hamburger--htx span::before,
   .c-hamburger--htx span::after {
@@ -872,7 +875,7 @@ footer {
 
   /* состояние active при открытом меню  */
   .c-hamburger--htx.is-active {
-    background-color: #cb0032; }
+    background: transparent; }
 
   .c-hamburger--htx.is-active span {
     background: none; }
@@ -887,6 +890,7 @@ footer {
 
   .c-hamburger--htx.is-active span::before,
   .c-hamburger--htx.is-active span::after {
-    transition-delay: 0s, 0.3s; } }
+    transition-delay: 0s, 0.3s;
+    background: black; } }
 
 /*# sourceMappingURL=style.css.map */
