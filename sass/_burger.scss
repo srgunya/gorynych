@@ -1,16 +1,14 @@
 @media screen and (max-width: 1023px){
 .c-hamburger {
-	position: absolute!important;
-  	display: block;
-  	overflow: hidden;
-  	margin: 0;
-	right: heihgthmob(14px)!important;
-	top: heihgthmob(14px)!important;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
   padding: 0;
-  width: heihgthmob(48px);
-  height: heihgthmob(48px);
+  width: 96px;
+  height: 96px;
   font-size: 0;
-  text-indent: heihgthmob(-9999px);
+  text-indent: -9999px;
   appearance: none;
   box-shadow: none;
   border-radius: none;
@@ -21,35 +19,33 @@
 .c-hamburger:focus {
   outline: none;
 }
-
-.c-hamburger span {
+	.c-hamburger span {
   display: block;
   position: absolute;
-  top: heihgthmob(22px);
-  left: heihgthmob(9px);
-  right: heihgthmob(9px);
-  height: heihgthmob(4px);
-  background: #fff;	
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white;
 }
-	.c-hamburger span::before,
-	.c-hamburger span::after{
-		position: absolute;
-  		display: block;
-  		left: 0;
-  		width: 100%;
-  		height: heihgthmob(4px);
-  		background-color: #fff;
-  		content: "";
-	}
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+}
 .c-hamburger span::before {
-  top: heihgthmob(-10px);
+  top: -20px;
 }
 .c-hamburger span::after {
-  bottom: heihgthmob(-10px);
+  bottom: -20px;
 }
-
-.c-hamburger--htx {
-  background: transparent;
+	.c-hamburger--htx {
+  background-color: #ff3264;
 }
 .c-hamburger--htx span {
   transition: background 0s 0.3s;
@@ -68,7 +64,7 @@
 }
 /* состояние active при открытом меню  */
 .c-hamburger--htx.is-active {
-  background: transparent;
+  background-color: #cb0032;
 }
 .c-hamburger--htx.is-active span {
   background: none;
@@ -84,6 +80,5 @@
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
-	background: black;
 }
 }
