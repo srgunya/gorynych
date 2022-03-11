@@ -1,14 +1,14 @@
 @media screen and (max-width: 1023px){
 .c-hamburger {
-	top: heihgthmob(13px);
-	right: heihgthmob(10px);
+	top: 13px;
+	right: 10px;
   display: block;
   position: absolute!important;
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: heihgthmob(48px);
-  height: heihgthmob(48px);
+  width: 48px;
+  height: 48px;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -22,12 +22,12 @@
   outline: none;
 }
 	.c-hamburger span {
-		width: heihgthmob(30px);
+		width: 30px;
   display: block;
   position: absolute;
-  left: heihgthmob(9px);
+  left: 9px;
   right: 18px;
-  height: heihgthmob(4px);
+  height: 4px;
   background: white;
 }
 .c-hamburger span::before,
@@ -36,15 +36,15 @@
   display: block;
   left: 0;
   width: 100%;
-  height: heihgthmob(4px);
+  height: 4px;
   background-color: #fff;
   content: "";
 }
 .c-hamburger span::before {
-  top: heihgthmob(-10px);
+  top: -10px;
 }
 .c-hamburger span::after {
-  bottom: heihgthmob(-10px);
+  bottom: -10px;
 }
 	.c-hamburger--htx {
   background-color: transparent;
