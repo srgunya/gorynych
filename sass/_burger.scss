@@ -1,7 +1,9 @@
 @media screen and (max-width: 1023px){
 .c-hamburger {
+	top: 13px;
+	right: 15px;
   display: block;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   margin: 0;
   padding: 0;
