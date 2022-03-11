@@ -488,7 +488,7 @@ footer {
     right: 0;
     width: 0;
     height: 100vh !important;
-    background: #fff;
+    background: red;
     z-index: 101; }
     .menu a {
       color: black !important; }
@@ -809,13 +809,15 @@ footer {
       width: 100%; } } }
 @media screen and (max-width: 1023px) {
   .c-hamburger {
+    top: 1.4508928571vh;
+    right: 1.1160714286vh;
     display: block;
-    position: relative;
+    position: absolute !important;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 96px;
-    height: 96px;
+    width: 5.3571428571vh;
+    height: 5.3571428571vh;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -829,12 +831,12 @@ footer {
     outline: none; }
 
   .c-hamburger span {
+    width: 3.3482142857vh;
     display: block;
     position: absolute;
-    top: 44px;
-    left: 18px;
+    left: 1.0044642857vh;
     right: 18px;
-    height: 8px;
+    height: 0.4464285714vh;
     background: white; }
 
   .c-hamburger span::before,
@@ -843,18 +845,18 @@ footer {
     display: block;
     left: 0;
     width: 100%;
-    height: 8px;
+    height: 0.4464285714vh;
     background-color: #fff;
     content: ""; }
 
   .c-hamburger span::before {
-    top: -20px; }
+    top: -1.1160714286vh; }
 
   .c-hamburger span::after {
-    bottom: -20px; }
+    bottom: -1.1160714286vh; }
 
   .c-hamburger--htx {
-    background-color: #ff3264; }
+    background-color: transparent; }
 
   .c-hamburger--htx span {
     transition: background 0s 0.3s;
@@ -873,7 +875,7 @@ footer {
 
   /* состояние active при открытом меню  */
   .c-hamburger--htx.is-active {
-    background-color: #cb0032; }
+    background-color: transparent; }
 
   .c-hamburger--htx.is-active span {
     background: none; }
@@ -888,6 +890,7 @@ footer {
 
   .c-hamburger--htx.is-active span::before,
   .c-hamburger--htx.is-active span::after {
-    transition-delay: 0s, 0.3s; } }
+    transition-delay: 0s, 0.3s;
+    background: black; } }
 
 /*# sourceMappingURL=style.css.map */
