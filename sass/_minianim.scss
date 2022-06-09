@@ -1,4 +1,4 @@
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 841px){
 	@keyframes menudvizh{
 	0%{
 		width: 0;
@@ -34,7 +34,7 @@
 	}
 	100%{
 	opacity: 0;
-	top: widthmob(20px);
+	top: heihgthmob(40px);
 	}
 }
 	@keyframes opa00{
@@ -48,7 +48,7 @@
 @keyframes opa1{
 	0%{
 	opacity: 0;	
-	top: widthmob(-20px);
+	top: heihgthmob(-40px);
 	}
 	100%{
 	opacity: 1;
@@ -61,7 +61,7 @@
 }
 .dvizh2{
 	animation: dvizh2 2s ease;
-	left: widthmob(70px);
+	left: widthmob(80px);
 }
 	.dvizh3{
 	animation: dvizh3 1s ease;
@@ -85,7 +85,7 @@
 		left: width(1600px);
 	}
 	100%{
-		left: width(70px);
+		left: width(80px);
 	}
 }
 	@keyframes dvizh3{

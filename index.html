@@ -61,27 +61,35 @@
     </header>
      <div class="wrap_cont">
      	<div class="cont">
-     	<div class="info">
+     	<div class="info-wrap">
+     		     	<div class="info">
      		<h1>Ресторан Горыныч</h1>
-			<p>Гриль, пекарня, бар<br />
-			Кухня открытого огня от Бориса Зарькова, Ильи Тютенкова и Владимира Мухина.<br />
-			Печи, хосперы, смокеры – «Горыныч» печет и жарит всеми имеющимися способами. В<br /> ресторане можно попробовать крафтовый хлеб из собственной пекарни, неаполитанскую<br /> пиццу, стейки собственного вызревания. И полюбоваться видом на старые московские<br /> бульвары из больших панорамных окон.</p>
+			<p>Гриль, пекарня, бар<br>
+			Кухня открытого огня от Бориса Зарькова, Ильи Тютенкова и Владимира Мухина.<br>
+			Печи, хосперы, смокеры – «Горыныч» печет и жарит всеми имеющимися способами. В ресторане можно попробовать крафтовый хлеб из собственной пекарни, неаполитанскую пиццу, стейки собственного вызревания. И полюбоваться видом на старые московские бульвары из больших панорамных окон.</p>
 			<a href="https://delivery.gorynich.com/#rec195175178" ><h2 class="cont_but1">Доставка</h2></a><br />
 			<h2 class="cont_but2">Забронировать</h2>
      	</div>
-		<div class="reservation opacity0">
+     	</div>
+		<div class="reservation-wrap">
+					<div class="reservation opacity0">
 			<h1>Бронирование</h1>
-			<form action="#">
+			<form action="form.php" method="POST">
 				<h3>Имя</h3><input type="text" name="name"><br />
 				<h3>Количество персон</h3><input type="number" name="person" onKeyPress="if(this.value.length==2) return false;" class="numb"><br />
 				<h3>Email</h3><input type="text" name="email" class="mail"><br />
 				<h3>Комментарий к бронированию</h3><input type="text" name="comment" class="comment"><br />
-				<h3 class="telh">Номер телефона</h3><input type="number" name="tel" class="tel numb">
+				<h3 class="telh">Номер телефона</h3><input type="number" name="tel" class="tel numb"><br />
 				<h3 class="dateh">Дата и время</h3><input type="text" name="date" class="date" id="datetimepicker">
-				<input type="submit" value="Готово" class="sub">
+				<div class="submit-wrap">
+					<input type="submit" value="Готово" class="sub">
+				</div>
+				
 			</form>
 </div>
-<div class="contact opacity0">
+		</div>
+<div class="contact-wrap">
+	<div class="contact opacity0">
 	<h1>Контакты</h1>
 	<p>
 		Время работы:<br />
@@ -100,9 +108,12 @@
 </div>
 </div>
 
+</div>
+
 <div class="shadow2"></div>
 <img src="img/gorynich.png" class="logo2" alt="">
-<div class="owl-carousel">
+<div class="owl-wrap">
+	<div class="owl-carousel">
   <div><img src="img/slider/new/1.jpg" alt=""></div>
   <div><img src="img/slider/new/2.jpg" alt=""></div>
   <div><img src="img/slider/new/3.jpg" alt=""></div>
@@ -118,6 +129,8 @@
   <div><img src="img/slider/new/13.jpg" alt=""></div>
   <div><img src="img/slider/new/14.jpg" alt=""></div>
 </div>
+</div>
+
 <div class="button">
 	<span>Открыть Галерею</span>
 	<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -140,7 +153,7 @@
 		<li>Бронирование</li>
 		<li>Контакты</li>
 		<a href="https://app.wrf.su/"><li>Приложение</li></a>
-		<a href="./index.html" class="eng"><li>EN</li></a>
+		<a href="./eng.html" class="eng"><li>EN</li></a>
 	</ul>
 </div>
 
@@ -204,7 +217,7 @@
   $('.owl-carousel').owlCarousel({	
 	  			items:1,
                 loop:false,
-                margin:100,
+                margin:50,
                 nav:true,
                 navText:[],
                 smartSpeed:1000,

@@ -12,9 +12,9 @@ let inp = document.querySelectorAll('form input');
 butmenu[0].onclick = function(){
 	burg.click();
 	logo2.style.display = "block";
-	contact.style.zIndex = "10";
-	info.style.zIndex = "10";
-	reservation.style.zIndex = "10";
+	contact.style.zIndex = "-1";
+	info.style.zIndex = "-1";
+	reservation.style.zIndex = "-1";
 	menu.classList.add('menudvizh1');
 		menu.classList.remove('menudvizh');
 		engl.classList.remove('display0');
@@ -32,7 +32,7 @@ butmenu[0].onclick = function(){
 		slider.classList.add('dvizh2');
 		info.classList.add('opacity0');
 		info.classList.remove('opacity1');
-		setTimeout("slider.style.left ='4.6052631579vw'", 100);
+		setTimeout("slider.style.left ='5.2vw'", 100);
 		setTimeout("logo2.style.left ='49.3421052632vw'", 100);
 		shadow.classList.remove('display0');
 		shadow.classList.remove('opacity0');
@@ -76,8 +76,8 @@ butmenu[0].onclick = function(){
 
 butmenu[2].onclick = function(){
 		burg.click();
-		contact.style.zIndex = "10";
-		info.style.zIndex = "10";
+		contact.style.zIndex = "-1";
+		info.style.zIndex = "-1";
 		reservation.style.zIndex = "100000";
 		menu.classList.add('menudvizh1');
 		menu.classList.remove('menudvizh');
@@ -122,8 +122,8 @@ butmenu[2].onclick = function(){
 }
  if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
 	 	 cont_but2.onclick = function(){
-		contact.style.zIndex = "10";
-		info.style.zIndex = "10";
+		contact.style.zIndex = "-1";
+		info.style.zIndex = "-1";
 		reservation.style.zIndex = "100000";
 		info.classList.add('opacity0');
 		info.classList.remove('opacity1');
@@ -136,8 +136,8 @@ butmenu[2].onclick = function(){
 butmenu[3].onclick = function(){
 	burg.click();
 	contact.style.zIndex = "100000";
-	info.style.zIndex = "10";
-	reservation.style.zIndex = "10";
+	info.style.zIndex = "-1";
+	reservation.style.zIndex = "-1";
 	menu.classList.add('menudvizh1');
 		menu.classList.remove('menudvizh');
 		engl.classList.remove('display0');

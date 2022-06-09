@@ -30,7 +30,7 @@ logo.onclick = function(){
 		reservation.classList.remove("display0");
 		reservation.classList.remove('active');
 		info.classList.add('active');
-		reservation.style.zIndex = "10";
+		reservation.style.zIndex = "-1";
 		info.style.zIndex = "100";
 		reservation.classList.remove('dvizh4');
 		reservation.classList.add('dvizh3');
@@ -41,7 +41,7 @@ logo.onclick = function(){
 		contact.classList.remove("display0");
 		contact.classList.remove('active');
 		info.classList.add('active');
-		contact.style.zIndex = "10";
+		contact.style.zIndex = "-1";
 		info.style.zIndex = "100";
 		contact.classList.remove('dvizh4');
 		contact.classList.add('dvizh3');
@@ -49,9 +49,9 @@ logo.onclick = function(){
 		cur = 0;
 	}
 	} else if(document.documentElement.clientWidth < document.documentElement.clientHeight){
-		contact.style.zIndex = "10";
+		contact.style.zIndex = "-1";
 		info.style.zIndex = "100000";
-		reservation.style.zIndex = "10";
+		reservation.style.zIndex = "-1";
 		if(cur1 == 1){
 			shadow.classList.remove('opacity2');
 		shadow.classList.add('display0');
@@ -103,13 +103,13 @@ logo.onclick = function(){
 if(document.documentElement.clientWidth > document.documentElement.clientHeight){
 	cont_but2.onclick = function(){
 	console.log(cur);
-	info.style.zIndex = "10";
+	info.style.zIndex = "-1";
 	info.classList.remove('active');
 	info.classList.remove('dvizh4');
 	info.classList.add('dvizh3');
 	reservation.classList.add('active');
-	reservation.style.zIndex = "100";
-	setTimeout('reservation.classList.add("dvizh4")', 1000);
+	reservation.style.zIndex = "100";	setTimeout('reservation.classList.add("dvizh4")', 1000);
+setTimeout('reservation.classList.remove("display0")', 1000);
 	cur = 2;
 	
 }
@@ -143,13 +143,13 @@ header[2].onclick = function(){
 	cur1 =0;
 	}
 	if(cur == 0){
-	info.style.zIndex = "10";
+	info.style.zIndex = "-1";
 	info.classList.remove('active');
 	info.classList.remove('dvizh4');
 	info.classList.add('dvizh3');
 	}
 	if(cur == 3){
-	contact.style.zIndex = "10";
+	contact.style.zIndex = "-1";
 	contact.classList.remove('active');
 	contact.classList.remove('dvizh4');
 	contact.classList.add('dvizh3');
@@ -175,13 +175,13 @@ header[3].onclick = function(){
 	cur1 =0;
 	}
 	if(cur == 0){
-	info.style.zIndex = "10";
+	info.style.zIndex = "-1";
 	info.classList.remove('active');
 	info.classList.remove('dvizh4');
 	info.classList.add('dvizh3');
 	}
 	if(cur == 2){
-	reservation.style.zIndex = "10";
+	reservation.style.zIndex = "-1";
 	reservation.classList.remove('active');
 	reservation.classList.remove('dvizh4');
 	reservation.classList.add('dvizh3');
