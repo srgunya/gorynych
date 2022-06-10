@@ -5,6 +5,7 @@ let reservation = document.querySelector('.reservation');
 let cont_but1 = document.querySelector('.cont_but1');
 let cont_but2 = document.querySelector('.cont_but2');
 let contact = document.querySelector('.contact');
+let res_h3 = document.querySelectorAll(".reservation h3");
 let cur = 0;
 let cur1 = 0;
 
@@ -108,10 +109,12 @@ if(document.documentElement.clientWidth > document.documentElement.clientHeight)
 	info.classList.remove('dvizh4');
 	info.classList.add('dvizh3');
 	reservation.classList.add('active');
-	reservation.style.zIndex = "100";	setTimeout('reservation.classList.add("dvizh4")', 1000);
-setTimeout('reservation.classList.remove("display0")', 1000);
-	cur = 2;
-	
+	reservation.style.zIndex = "100";
+	setTimeout('reservation.classList.add("dvizh4")', 1000);
+	setTimeout('reservation.classList.remove("display0")', 1000);
+	setTimeout(ani, 1000);
+	setTimeout(aniStat, 3000);
+	cur = 2;	
 }
 }
 
@@ -157,7 +160,19 @@ header[2].onclick = function(){
 	reservation.classList.add('active');
 	reservation.style.zIndex = "100";
 	setTimeout('reservation.classList.add("dvizh4")', 1000);
+	setTimeout(ani, 1000);
+	setTimeout(aniStat, 3000);
 	cur = 2;
+}
+function ani(){
+	for(let i=0; i<res_h3.length; i++){
+		res_h3[i].classList.add('aft_ani');
+	}
+}
+function aniStat(){
+	for(let i=0; i<res_h3.length; i++){
+		res_h3[i].classList.add('h3_stat');
+	}
 }
 
 header[3].onclick = function(){

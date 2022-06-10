@@ -119,15 +119,19 @@ butmenu[2].onclick = function(){
 		setTimeout("reservation.classList.remove('opacity0')", 1000);
 		cur1 = 2;
 	}
+		setTimeout(ani, 1000);
+		setTimeout(aniStat, 3000);
 }
- if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
-	 	 cont_but2.onclick = function(){
+ if(document.documentElement.clientWidth < document.documentElement.clientHeight){
+	 	cont_but2.onclick = function(){
 		contact.style.zIndex = "-1";
 		info.style.zIndex = "-1";
 		reservation.style.zIndex = "100000";
 		info.classList.add('opacity0');
 		info.classList.remove('opacity1');
 		setTimeout("reservation.classList.add('opacity1')", 1500);
+		setTimeout(ani, 1000);
+		setTimeout(aniStat, 3000);
 		cur1 = 2;
 }
  }
@@ -214,6 +218,6 @@ burg.onclick = function(){
 
 if(document.documentElement.clientWidth > document.documentElement.clientHeight){
 	menu.classList.add("display0");
-} else if(document.documentElement.clientWidth < 									document.documentElement.clientHeight){
+} else if(document.documentElement.clientWidth < document.documentElement.clientHeight){
 	menu.classList.remove("display0");
 }

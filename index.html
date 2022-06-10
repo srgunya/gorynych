@@ -75,18 +75,23 @@
 					<div class="reservation opacity0">
 			<h1>Бронирование</h1>
 			<form action="#" id="form">
-				<h3>Имя</h3><input type="text" name="name"><br />
+				<h3>Имя</h3><input type="text" name="name" class="formName"><br />
 				<h3>Количество персон</h3><input type="number" name="person" onKeyPress="if(this.value.length==2) return false;" class="numb"><br />
-				<h3>Email</h3><input type="text" name="email" class="mail"><br />
-				<h3>Комментарий к бронированию</h3><input type="text" name="comment" class="comment"><br />
+				<h3 class="h3_long">Email</h3><input type="text" name="email" class="mail"><br />
+				<h3 class="h3_long">Комментарий к бронированию</h3><input type="text" name="comment" class="comment"><br />
 				<h3 class="telh">Номер телефона</h3><input type="number" name="tel" class="tel numb"><br />
 				<h3 class="dateh">Дата и время</h3><input type="text" name="date" class="date" id="datetimepicker">
 				<div class="submit-wrap">
 				<input type="submit" value="Готово" class="sub">
 				</div>
 				
-			</form>
+			</form>			
 </div>
+				<div class="form_send-wrap">
+				<div class="form_send opacity0">
+				<p>Ваша заявка принята. Наши сотрудники свяжутся с Вами в ближайшее время для подтверждения брони.</p>
+				</div>
+			</div>
 		</div>
 <div class="contact-wrap">
 	<div class="contact opacity0">
@@ -177,7 +182,7 @@
 <script src="js/menu.js"></script>
 <script src="js/mini.js"></script>
 <script src="js/burger.js"></script>
-<script src="sendMail.js"></script>
+<script src="js/sendMail.js"></script>
 
 
 <script>
