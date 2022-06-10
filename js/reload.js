@@ -10,7 +10,7 @@ window.onload=function(){
 	setTimeout('wrap.classList.add("dvizh")', 500);
 	setTimeout('but1.classList.add("opacity1")', 2000);
 	setTimeout('but2.classList.add("opacity1")', 2000);
-	setTimeout('but1.classList.add("h2-stat")', 3000);
-	setTimeout('but2.classList.add("h2-stat")', 3000);
+	setTimeout('but1.classList.add("h2-stat")', 4000);
+	setTimeout('but2.classList.add("h2-stat")', 4000);
 	setTimeout('strelka.classList.add("opacity1")', 3000);
 }
