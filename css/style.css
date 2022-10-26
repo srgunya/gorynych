@@ -350,7 +350,8 @@ footer {
   top: 0;
   width: 39.4736842105vw; }
   .reservation form {
-    margin-top: 3.9473684211vw; }
+    margin-top: 3.9473684211vw;
+    transition: all 1.5s; }
   .reservation h3 {
     width: 10.4605263158vw;
     font-weight: 100;
@@ -437,7 +438,8 @@ footer {
   position: absolute;
   top: 13.1578947368vw;
   left: 0;
-  z-index: -1; }
+  z-index: -1;
+  transition: all 1.5s; }
 
 @media screen and (max-width: 841px) {
   * {

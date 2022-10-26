@@ -7,6 +7,7 @@
 	width: width(600px);
 	form{
 		margin-top: width(60px);
+		transition: all 1.5s;
 	}
 		h3{
 			width: width(159px);
@@ -117,4 +118,5 @@
 		top: width(200px);
 		left: 0;
 		z-index: -1;
+		transition: all 1.5s;
 	}

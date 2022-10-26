@@ -30,10 +30,8 @@ function formSend(ev){
 	if(document.querySelectorAll('.err').length > 0){
 		return false
 	} else{
-		forma.classList.remove('opacity1');
-		forma.classList.add('opacity0');
-		setTimeout("form_send.classList.remove('opacity0')", 1000);
-		setTimeout("form_send.classList.add('opacity1')", 1000);
+		forma.style.opacity = 0;
+		setTimeout("form_send.style.opacity = 1", 1000);
 		
 		let formData = new FormData(forma);
 		let xhr = new XMLHttpRequest();
@@ -41,9 +39,7 @@ function formSend(ev){
 		xhr.send(formData);
 		
 		setTimeout("forma.reset()", 2000);
-		setTimeout("form_send.classList.remove('opacity1')", 5000);
-		setTimeout("form_send.classList.add('opacity0')", 5000);
-		setTimeout("forma.classList.remove('opacity0')", 6000);
-		setTimeout("forma.classList.add('opacity1')", 6000);
+		setTimeout("form_send.style.opacity = 0", 5000);
+		setTimeout("forma.style.opacity = 1", 6000);
 	}	
 }
