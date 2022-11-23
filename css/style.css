@@ -490,7 +490,8 @@ footer {
     padding-left: 20px;
     padding-right: 20px; }
     .info h1 {
-      overflow: visible; }
+      overflow: visible;
+      color: green; }
 
   form {
     overflow: inherit !important; }
