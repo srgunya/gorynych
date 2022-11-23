@@ -445,6 +445,9 @@ footer {
   * {
     font-size: 16px; }
 
+  .wrap {
+    position: fixed; }
+
   header {
     padding: 20px; }
     header .logo {
