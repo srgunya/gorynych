@@ -445,9 +445,6 @@ footer {
   * {
     font-size: 16px; }
 
-  .wrap {
-    position: fixed; }
-
   header {
     padding: 20px; }
     header .logo {
@@ -490,8 +487,7 @@ footer {
     padding-left: 20px;
     padding-right: 20px; }
     .info h1 {
-      overflow: visible;
-      color: green; }
+      overflow: visible; }
 
   form {
     overflow: inherit !important; }
