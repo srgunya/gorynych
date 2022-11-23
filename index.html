@@ -199,7 +199,7 @@
 	<script src="js/numbMaska/jquery.maskedinput.min.js"></script>
 
 	<script>
-//		if (document.documentElement.clientWidth > document.documentElement.clientHeight) {
+		if (document.documentElement.clientWidth > document.documentElement.clientHeight) {
 			$('.date').datetimepicker({
 				format: 'd.m.Y H:i',
 				allowTimes: [
@@ -208,13 +208,13 @@
 				]
 				//step: 30
 			});
-//		} else if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
-//			$('.date').datetimepicker({
-//				datepicker: false,
-//				timepicker: false,
-//				mask: true, // '9999/19/39 29:59' - digit is the maximum possible for a cell
-//			});
-//		}
+		} else if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+			$('.date').datetimepicker({
+				datepicker: false,
+				timepicker: false,
+				mask: true, // '9999/19/39 29:59' - digit is the maximum possible for a cell
+			});
+		}
 	</script>
 
 
