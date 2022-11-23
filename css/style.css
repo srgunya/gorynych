@@ -650,14 +650,36 @@ footer {
     margin-top: 20px !important;
     display: flex;
     flex-flow: column nowrap; }
+    form h3:nth-child(1) {
+      top: auto !important; }
+    form h3:nth-child(4) {
+      top: -15px !important; }
+    form h3:nth-child(7) {
+      top: -30px !important; }
+    form h3:nth-child(10) {
+      top: -45px !important; }
+    form h3:nth-child(13) {
+      top: -60px !important; }
+    form h3:nth-child(16) {
+      top: -75px !important; }
     form h3 {
       font-size: 16px !important;
       position: relative !important;
-      top: auto !important;
       width: auto !important;
       max-width: 360px !important; }
+    form input:nth-child(2) {
+      top: auto !important; }
+    form input:nth-child(5) {
+      top: -15px !important; }
+    form input:nth-child(8) {
+      top: -30px !important; }
+    form input:nth-child(11) {
+      top: -45px !important; }
+    form input:nth-child(14) {
+      top: -60px !important; }
+    form input:nth-child(17) {
+      top: -75px !important; }
     form input {
-      top: auto !important;
       width: auto !important;
       max-width: 360px !important;
       height: 29px !important;
@@ -669,6 +691,7 @@ footer {
     form h3 {
       left: 0 !important; }
     form .submit-wrap {
+      margin-top: -70px;
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
