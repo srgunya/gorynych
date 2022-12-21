@@ -445,9 +445,13 @@ footer {
 
 @media screen and (max-width: 913px) {
   body {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    background-size: 100% 100vh !important; }
+
+  .wrap {
+    position: fixed;
     background-size: 100% 100vh !important; }
 
   * {
@@ -489,6 +493,7 @@ footer {
     align-items: center; }
 
   .info {
+    color: red;
     line-height: 20px !important;
     width: 100% !important;
     height: auto !important;
