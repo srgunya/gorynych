@@ -12,6 +12,8 @@
 @media screen and (max-width: 913px) {
 	body{
 		position: fixed;
+		top: 0;
+		left: 0;
 		background-size: 100% 100vh!important;
 	}
 	* {
@@ -73,7 +75,6 @@
 		h1 {
 			overflow: visible;
 		}
-		color: green;
 		line-height: 20px !important;
 		width: 100% !important;
 		height: auto !important;
