@@ -4,7 +4,7 @@ let wrap1 = document.querySelector('.wrap');
 if (document.documentElement.clientWidth > document.documentElement.clientHeight) {
 	body.style.background = "url(../img/background.jpg)";
 } else if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
-	body.style.background = "url(../img/backgroundmob.jpg)";
+	body.style.background = "black";
 	wrap1.style.background = "url(../img/backgroundmob.jpg)";
 	burg.classList.remove("display0");
 }
