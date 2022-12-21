@@ -487,6 +487,7 @@ footer {
     align-items: center; }
 
   .info {
+    color: green;
     line-height: 20px !important;
     width: 100% !important;
     height: auto !important;
