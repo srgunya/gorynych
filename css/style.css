@@ -444,8 +444,9 @@ footer {
   transition: all 1.5s; }
 
 @media screen and (max-width: 913px) {
-  .wrap {
-    position: fixed; }
+  body {
+    position: fixed;
+    background-size: 100% 100vh !important; }
 
   * {
     font-size: 16px; }
