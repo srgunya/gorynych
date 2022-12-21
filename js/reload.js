@@ -6,11 +6,10 @@ let strelka = document.querySelector('.button .fa');
 
 window.onload=function(){
 	shadow.classList.add('opacity00');
-	setTimeout('shadow.classList.add("display0")', 1500);
+	setTimeout('shadow.style.opacity = 0;', 1500);
 	setTimeout('wrap.classList.add("dvizh")', 500);
-	setTimeout('but1.classList.add("opacity1")', 2000);
-	setTimeout('but2.classList.add("opacity1")', 2000);
-	setTimeout('but1.classList.add("h2-stat")', 4000);
-	setTimeout('but2.classList.add("h2-stat")', 4000);
-	setTimeout('strelka.classList.add("opacity1")', 3000);
+	setTimeout('but1.style.opacity = 1', 2000);
+	setTimeout('but2.style.opacity = 1', 2000);
+	setTimeout('but1.classList.add("h2-stat")', 3000);
+	setTimeout('but2.classList.add("h2-stat")', 3000);
 }

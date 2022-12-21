@@ -1,11 +1,25 @@
-@media screen and (max-width: 841px) {
+//@media screen and (max-width: 913px) and (orientation: landscape) {
+//  html {
+//    transform: rotate(-90deg);
+//    transform-origin: left top;
+//    width: 100vh;
+//    overflow-x: hidden;
+//    position: absolute;
+//    top: 100%;
+//    left: 0;
+//  }
+//}
+@media screen and (max-width: 913px) {
+	.wrap{
+		position: fixed;
+	}
 	* {
 		font-size: 16px;
 	}
 
 	header {
 		padding: 20px;
-
+	
 		.logo {
 			z-index: 10000;
 

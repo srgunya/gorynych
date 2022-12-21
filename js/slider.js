@@ -10,9 +10,7 @@ button.onclick = function(){
 	wrapCont.classList.remove('dvizh2');
 	button.classList.add('opacity0');
 	button.classList.remove('opacity1');
-	shadow.classList.remove('display0');
-	shadow.classList.remove('opacity0');
-	shadow.classList.add('opacity2');
+	shadow.style.opacity = 0.6;
 	logo2.style.opacity = '.4';
 	cur1 = 1;
 }

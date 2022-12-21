@@ -109,7 +109,8 @@ h2 {
   font-weight: 500;
   margin-top: 1.9736842105vw;
   cursor: pointer;
-  opacity: 0; }
+  opacity: 0;
+  transition: opacity .6s; }
   h2:before {
     display: block;
     content: "";
@@ -118,7 +119,7 @@ h2 {
     background: #ac2e35;
     opacity: 1;
     animation: width 1s ease;
-    animation-delay: 4s; }
+    animation-delay: 3s; }
   h2:hover:before {
     opacity: .5; }
 
@@ -128,7 +129,9 @@ h2 {
   background: black;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  opacity: 1;
+  transition: opacity .4s; }
 
 .wrap {
   width: 100%;
@@ -212,8 +215,7 @@ h2 {
     font-size: 1.6447368421vw;
     position: relative;
     left: 0.5263157895vw;
-    top: 0.4605263158vw;
-    opacity: 0; }
+    top: 0.4605263158vw; }
 
 footer {
   overflow: visible;
@@ -264,7 +266,7 @@ footer {
     opacity: 1 !important; }
 
   .opacity2 {
-    animation: opa2 2s ease;
+    animation: opa2 .2s ease;
     opacity: 0.6 !important; }
 
   .display0 {
@@ -441,7 +443,10 @@ footer {
   z-index: -1;
   transition: all 1.5s; }
 
-@media screen and (max-width: 841px) {
+@media screen and (max-width: 913px) {
+  .wrap {
+    position: fixed; }
+
   * {
     font-size: 16px; }
 

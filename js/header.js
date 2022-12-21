@@ -21,9 +21,7 @@ logo.onclick = function(){
 	button.classList.add('opacity1');
 	button.classList.remove('opacity0');
 	logo2.style.opacity = '1';
-	shadow.classList.remove('opacity2');
-	shadow.classList.add('display0');
-	shadow.classList.add('opacity0');
+	shadow.style.opacity = 0;
 		cur1 =0;
 		return false;
 	}
@@ -54,9 +52,7 @@ logo.onclick = function(){
 		info.style.zIndex = "100000";
 		reservation.style.zIndex = "-1";
 		if(cur1 == 1){
-			shadow.classList.remove('opacity2');
-		shadow.classList.add('display0');
-		shadow.classList.add('opacity0');
+		shadow.style.opacity = 0;
 		logo2.style.opacity = '1';
 		logo2.classList.remove('dvizh1');
 		slider.classList.remove('dvizh2');
@@ -124,9 +120,7 @@ header[0].onclick = function(){
 	wrapCont.classList.remove('dvizh2');
 	button.classList.add('opacity0');
 	button.classList.remove('opacity1');
-	shadow.classList.remove('display0');
-	shadow.classList.remove('opacity0');
-	shadow.classList.add('opacity2');
+	shadow.style.opacity = 0.6;
 	logo2.style.opacity = '.4';
 	cur1 = 1;
 }
@@ -140,9 +134,7 @@ header[2].onclick = function(){
 	button.classList.add('opacity1');
 	button.classList.remove('opacity0');
 	logo2.style.opacity = '1';
-	shadow.classList.remove('opacity2');
-	shadow.classList.add('display0');
-	shadow.classList.add('opacity0');
+	shadow.style.opacity = 0;
 	cur1 =0;
 	}
 	if(cur == 0){
@@ -184,9 +176,7 @@ header[3].onclick = function(){
 	button.classList.add('opacity1');
 	button.classList.remove('opacity0');
 	logo2.style.opacity = '1';
-	shadow.classList.remove('opacity2');
-	shadow.classList.add('display0');
-	shadow.classList.add('opacity0');
+	shadow.style.opacity = 0;
 	cur1 =0;
 	}
 	if(cur == 0){
